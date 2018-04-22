@@ -30,11 +30,9 @@ USAGE
 ```
 <!-- usagestop -->
 <!-- commands -->
-* [`git hello:org [FILE]`](#git-helloorg-file)
+* [`sfdx git:checkout]`](#git-helloorg-file)
 
-## `git hello:org [FILE]`
-
-Prints a greeting and your org id(s)!
+## `sfdx git:checkout`
 
 ```
 USAGE
@@ -49,6 +47,25 @@ EXAMPLES
   
 
   $ sfdx git:checkout --name mybranch
+```
+
+## Git Branch Config
+Create a file at `.sfdx/git-branch-config.json` with the following contents:
+
+```json
+{
+  "master": {
+    "defaultdevhubusername": "test0@example.com"
+  },
+  "foo":
+  {
+    "defaultdevhubusername": "test1@example.com"
+  },
+  "baz":
+  {
+    "defaultdevhubusername": "test-baz@example.com"
+  }
+}
 ```
 
 _See code: [src/commands/git/checkout.ts](https://github.com/ntotten/sfdxgit/blob/v0.0.0/src/commands/git/checkout.ts)_
