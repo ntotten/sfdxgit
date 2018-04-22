@@ -1,0 +1,5 @@
+{
+  "commandDescription": "Manages config of sfdx related to git branches",
+  "nameFlagDescription": "the branch to switch",
+  "branchFlagDescription": "create a new branch on checkout"
+}
