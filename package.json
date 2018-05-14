@@ -1,7 +1,7 @@
 {
-  "name": "git",
+  "name": "sfdx-plugin-git",
   "description": "Git tools for SFDX",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "author": "Nathan Totten",
   "bugs": "https://github.com/ntotten/sfdxgit/issues",
   "dependencies": {

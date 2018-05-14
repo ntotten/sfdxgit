@@ -18,57 +18,39 @@ Git tools for SFDX
 <!-- install -->
 <!-- usage -->
 ```sh-session
-$ npm install -g @ntotten/sfdxgit
-$ git COMMAND
+$ npm install -g sfdx-plugin-git
+$ sfdx-plugin-git COMMAND
 running command...
-$ git (-v|--version|version)
-git/0.0.0 darwin-x64 node-v8.9.4
-$ git --help [COMMAND]
+$ sfdx-plugin-git (-v|--version|version)
+sfdx-plugin-git/0.0.2 darwin-x64 node-v8.9.4
+$ sfdx-plugin-git --help [COMMAND]
 USAGE
-  $ git COMMAND
+  $ sfdx-plugin-git COMMAND
 ...
 ```
 <!-- usagestop -->
 <!-- commands -->
-* [`sfdx git:checkout]`](#git-helloorg-file)
+* [`sfdx-plugin-git git:checkout [STRING]`](#sfdx-plugin-git-gitcheckout-string)
 
-## `sfdx git:checkout`
+## `sfdx-plugin-git git:checkout [STRING]`
+
+Manages config of sfdx related to git branches
 
 ```
 USAGE
-  $ git git:checkout
+  $ sfdx-plugin-git git:checkout [STRING]
 
 OPTIONS
-  -n, --name=name                                  branch to checkout
-  -b , --branch                                    create a new branch?
+  -b, --branch                                    create a new branch on checkout
+  -n, --name=name                                 the branch to switch
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
 
-EXAMPLES
-  $ sfdx git:checkout --name mybranch --branch 
-  
-
-  $ sfdx git:checkout --name mybranch
+EXAMPLE
+  $ sfdx git:checkout --name mybranch --branch
 ```
 
-## Git Branch Config
-Create a file at `.sfdx/git-branch-config.json` with the following contents:
-
-```json
-{
-  "master": {
-    "defaultdevhubusername": "test0@example.com"
-  },
-  "foo":
-  {
-    "defaultdevhubusername": "test1@example.com"
-  },
-  "baz":
-  {
-    "defaultdevhubusername": "test-baz@example.com"
-  }
-}
-```
-
-_See code: [src/commands/git/checkout.ts](https://github.com/ntotten/sfdxgit/blob/v0.0.0/src/commands/git/checkout.ts)_
+_See code: [src/commands/git/checkout.ts](https://github.com/ntotten/sfdxgit/blob/v0.0.2/src/commands/git/checkout.ts)_
 <!-- commandsstop -->
 <!-- debugging-your-plugin -->
 # Debugging your plugin

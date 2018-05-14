@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import { execSync } from 'child_process';
 
 core.Messages.importMessagesDirectory(join(__dirname, '..', '..', '..'));
-const messages = core.Messages.loadMessages('git', 'checkout');
+const messages = core.Messages.loadMessages('sfdx-plugin-git', 'checkout');
 
 export default class Checkout extends SfdxCommand {
   public static description = messages.getMessage('commandDescription');
