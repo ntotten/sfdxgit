@@ -1,16 +1,7 @@
-git
+SFDX Git Tools Plugin
 ===
 
 Git tools for SFDX
-
-[![Version](https://img.shields.io/npm/v/git.svg)](https://npmjs.org/package/git)
-[![CircleCI](https://circleci.com/gh/dev/git/tree/master.svg?style=shield)](https://circleci.com/gh/dev/git/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/dev/git?branch=master&svg=true)](https://ci.appveyor.com/project/heroku/git/branch/master)
-[![Codecov](https://codecov.io/gh/dev/git/branch/master/graph/badge.svg)](https://codecov.io/gh/dev/git)
-[![Greenkeeper](https://badges.greenkeeper.io/dev/git.svg)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/dev/git/badge.svg)](https://snyk.io/test/github/dev/git)
-[![Downloads/week](https://img.shields.io/npm/dw/git.svg)](https://npmjs.org/package/git)
-[![License](https://img.shields.io/npm/l/git.svg)](https://github.com/dev/git/blob/master/package.json)
 
 <!-- toc -->
 * [Debugging your plugin](#debugging-your-plugin)
